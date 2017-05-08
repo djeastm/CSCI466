@@ -1,6 +1,5 @@
 function Visualize( id, dataset, clusters, U, visible, VATAndiVAT)
-%Visualize Summary of this function goes here
-%   Detailed explanation goes here
+%Visualize Provide visuals for clustering results and export to file
 
 colorVector = [[0 0 1];[1 0 0];[0 1 0];[0 1 1];[1 0 1];[0.3 0.3 0.3]; [0.6 0.2 0.8]; [0.1 0.5 0.9]];
 
