@@ -1,6 +1,5 @@
 function [ supportData, Res ] = RunFold( Data, Labels, kernelType, Cval )
-%RUNFOLD Summary of this function goes here
-%   Detailed explanation goes here
+%RUNFOLD Run each fold through training and testing
 [N,~] = size(Data);
     H = zeros(length(Data));
     len = length(Data);
@@ -34,7 +33,7 @@ function [ supportData, Res ] = RunFold( Data, Labels, kernelType, Cval )
     supportData = Data(supportVectors,:);
     supportLabels = Labels(supportVectors);
     supportLength = length(supportLabels);
-    %Now, solve for b
+    % Now, solve for b
     % b is the weight vector, w or omega, the initial weight
     % uses the support vector data, uses the kernel to transform them from low to high
     % dimension
