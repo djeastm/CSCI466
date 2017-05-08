@@ -1,5 +1,5 @@
 function distancemeasure = distmeasure(centroid, data, type)
-%This function measures the distance for FCM and PCM algorithms
+%DISTMEASURE This function measures the distance for FCM and PCM algorithms
 
 distancemeasure = zeros(size(centroid, 1), size(data, 1));
   
