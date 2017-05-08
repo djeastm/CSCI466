@@ -1,6 +1,5 @@
 function [ kernel ] = Kernel(type, trainData, testData, i,j )
-%KERNEL Summary of this function goes here
-%   Detailed explanation goes here
+%KERNEL Returns chosen kernel function
 kernel = [];
 % trainDatai is x, testDataj is z
 switch (type)
